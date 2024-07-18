@@ -75,7 +75,7 @@ def predict():
             prediction_result = f'The patient is likely suffering from CKD with a probability of {probability:.2f}%'
             diet_suggestion = diet_plan("The patient is likely suffering from CKD")
         else:
-            result = f'Patient is healthy with a probability of {probability:.2f}%'
+            prediction_result = f'Patient is healthy with a probability of {probability:.2f}%'
             diet_suggestion = diet_plan("Patient is healthy")
         
         return jsonify({'Prediction': prediction_result, 'Diet Suggestion': diet_suggestion})
